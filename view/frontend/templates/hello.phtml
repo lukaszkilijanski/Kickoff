@@ -1,0 +1,22 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * File: hello.phtml
+ *
+ * @author Łukasz Kilijański <contact@lukasz-k.com>
+ * @copyright Copyright (C) 2024
+ *  Łukasz Kilijański (https://https://lukasz-k.com/)
+ */
+
+/** @var Magento\Framework\View\Element\Template $block */
+/** @var Magento\Framework\Escaper $escaper */
+/** @var LukaszKilijanski\Kickoff\ViewModel\HelloWorld $helloWordVm */
+$helloWordVm = $block->getData('hello_world_vm');
+?>
+
+<div class="hello">
+    <h1>
+        <?= $escaper->escapeHtml($helloWordVm->getHelloWord() . ' ' . $helloWordVm->getWorldWord()) ?>
+    </h1>
+</div>

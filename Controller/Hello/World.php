@@ -12,14 +12,24 @@ declare(strict_types=1);
 namespace LukaszKilijanski\Kickoff\Controller\Hello;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
+use Magento\Framework\View\Result\Page;
+use Magento\Framework\View\Result\PageFactory;
 
 class World implements HttpGetActionInterface
 {
     /**
-     * @return void
+     * @param PageFactory $pageFactory
      */
-    public function execute() : void
+    public function __construct(
+        private PageFactory $pageFactory
+    ){
+    }
+
+    /**
+     * @return Page
+     */
+    public function execute() : Page
     {
-        die('Hello world!');
+        return $this->pageFactory->create();
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @author Łukasz Kilijański <contact@lukasz-k.com>
+* @copyright Copyright (C) 2024
+* Łukasz Kilijański (https://https://lukasz-k.com/)
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main">
+            <block name="hello.world" template="LukaszKilijanski_Kickoff::hello.phtml">
+                <arguments>
+                    <argument name="hello_world_vm" xsi:type="object">LukaszKilijanski\Kickoff\ViewModel\HelloWorld</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
