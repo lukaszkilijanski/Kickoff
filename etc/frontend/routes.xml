@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @author Łukasz Kilijański <contact@lukasz-k.com>
+* @copyright Copyright (C) 2024
+* Łukasz Kilijański (https://https://lukasz-k.com/)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="kickoff" frontName="kickoff">
+            <module name="LukaszKilijanski_Kickoff"/>
+        </route>
+    </router>
+</config>
